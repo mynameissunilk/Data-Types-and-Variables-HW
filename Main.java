@@ -7,11 +7,6 @@
 
 public class Main {
     public static void main(String[] args) {
-
-        // Reminder: comments are anything after // on a single line
-        // or anything on one or more lines between /* and */
-
-
         /**
          * 1) Fill in an appropriate data type for the following variable declarations based on the initialized value.
          *
@@ -20,18 +15,18 @@ public class Main {
          * Hint 2 - try running the code (right click on this file and select "Run Main.main()" and if you get
          * zero errors then your data types and values all match up
          */
-        ___ varA = 3;
-        ___ varB = 9.75;
-        ___ varC = 4.0;
-        ___ varD = 2.;
-        ___ varE = 8573f;
-        ___ varF = "Gelato is delicious!";
-        ___ varG = '$';
-        ___ varH = "$";
-        ___ varI = true;
-        ___ varJ = (2 == 3);
-        ___ varK = Integer.valueOf("9,235");
-        ___ varL = varF.equals("Gelato is delicious!");
+       int varA = 3;
+       double varB = 9.75;
+       double varC = 4.0; 
+       double varD = 2.;
+       float varE = 8573f;
+       String varF = "Gelato is delicious!";
+       char varG = '$';
+       String varH = "$";
+       boolean varI = true;
+       boolean varJ = (2 == 3);
+       int varK = Integer.valueOf("9235"); // I had an Exception at runtime that went away once I removed the comma. 
+       boolean varL = varF.equals("Gelato is delicious!");
 
 
         /**
@@ -43,16 +38,16 @@ public class Main {
          * be done in separate lines of code.
          */
 
-        ___ price;
-        price = ___;
+        double price;
+        price = 19.99;
 
 
         /**
-         * 2b) Next, image you need a variable for customer comments on an item. Declare comment below and
+         * 2b) Next, imagine you need a variable for customer comments on an item. Declare comment below and
          * give it an initial value of "placeholder comment" all in one line of code.
          */
 
-        ___ comment = ___;
+        String comment = "placeholder comment";
 
 
         /**
@@ -68,6 +63,8 @@ public class Main {
         int divisor = 3;
         int divisionResult = numerator / divisor;
         System.out.println(divisionResult);
+
+	//Since 10 is not perfeclty divisible by 3, the java compiler will return the integer value closest to the decimal answer. In our case, 3 goes into 10 3 times, so the Java will return 3 
 
     }
 }
